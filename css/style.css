@@ -34,7 +34,7 @@ flex-grow: 2;
 }
 
 .main-head
-{ background-color: #0818c5;
+{ background-color: #050e76;
     color: #000000;
     padding: 120px;
     justify-content: center;
@@ -47,5 +47,38 @@ flex-grow: 2;
 { background-color: #c508a2;
     padding: 150px;
     margin: 0px 200px;
+    
+}
+
+
+main
+{ 
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 200px;
+   margin-right: 200px;
+    
+}
+
+.main-body
+{ background-color: #5a48f7;
+    color: #ffffff;
+    height: 300px;
+    border: #000000;
+    border-style: dashed;
+    flex-grow: 1.5;
+
+
+}
+
+.main-body.right
+{ background-color: #ff80fb;
+
+    flex-grow: 1;
     
 }
