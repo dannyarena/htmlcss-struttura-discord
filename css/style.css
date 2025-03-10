@@ -119,6 +119,7 @@ main
 .row.grey
 {    background-color: #b0afaf;
     padding: 20px;
+    
   
 }
 
@@ -127,5 +128,50 @@ main
     height: 700px;
     border: #000000;
     border-style: dashed;
-    flex-grow: 1.5;
+    flex-grow: 1;
 }
+
+.row.black
+{ background-color: #262323;
+    padding: 20px;
+    
+    
+}
+
+.main-body.orange
+{ background-color: #f7a05a;
+    flex-grow: 1.5;
+
+}
+
+.main-body.light.green
+{ background-color: #a1f7a0;
+    flex-grow: 1;
+
+}
+
+.row.black.little {
+background-color: #262323;
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.main-body.light.blue
+{ background-color: #a0a1f7;
+    height: 100px;
+}
+
+.main-body.button
+{ background-color: #f7a0a0;
+    padding: 5px 10px;
+    border: 2px dashed #000;
+    
+} 
+
+.main-body.spacer {
+    flex-grow: 1;
+    background-color: transparent;
+
+} 
