@@ -1,13 +1,14 @@
-* {
 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-header
-
-{
+  }
+  
+  /* ===========================
+     HEADER
+  =========================== */
+  header {
     background-color: #38dbf1;
     color: #ffffff;
     padding: 25px;
@@ -15,163 +16,168 @@ header
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-}
-
-.head-box {
-
+  }
+  
+  .head-box {
     background-color: #f19b38;
     color: #000000;
     padding: 15px;
     text-align: center;
     flex: 1;
-    border: #000000;
-    border-style: dashed;
-}
-
-.head-box.central {
-flex-grow: 2;
-}
-
-.main-head
-{ background-color: #050e76;
+    border: #000000 dashed;
+  }
+  
+  .head-box.central {
+    flex-grow: 2;
+  }
+  
+  /* ===========================
+     MAIN-HEAD
+  =========================== */
+  .main-head {
+    background-color: #050e76;
     color: #000000;
     padding: 120px;
     justify-content: center;
     align-items: center;
-    
-}
-
-.main-head.little
-
-{ background-color: #c508a2;
+  }
+  
+  .main-head.little {
+    background-color: #c508a2;
     padding: 150px;
     margin: 0px 200px;
-    
-}
-
-
-main
-{ 
+  }
+  
+  /* ===========================
+     MAIN
+  =========================== */
+  main {
     background-color: #ffffff;
     color: #000000;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 40px;
     align-items: center;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   margin-left: 200px;
-   margin-right: 200px;
-    
-}
-
-.main-body.blue
-{ background-color: #5a48f7;
-    color: #ffffff;
-    
-    height: 200px;
-    border: #000000;
-    border-style: dashed;
-    flex-grow: 1.5;
-   
-
-}
-
-.main-body.pink
-{ background-color: #ff80fb;
-
-    flex-grow: 1;
-    
-}
-
-.main-body.blue.B
-{ flex-grow: 1;
-
-}
-
-.main-body.pink.B
-{ flex-grow: 1.5;
-
-}
-
-.main-body.blue.C
-{ flex-grow: 1.5;
-
-}
-
-.main-body.pink.C
-{ flex-grow: 1;
-
-}
-
-
-.row
-{ display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  /* ===========================
+     WRAPPER FULLWIDTH PER SFONDO
+  =========================== */
+  /* Per le righe grigie */
+  .grey.fullwidth {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-color: #b0afaf;
+    /* Padding verticale (eventuale spaziatura esterna al contenuto) */
+    padding: 40px 0;
+  }
+  
+  /* Per le righe nere */
+  .black.fullwidth {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    background-color: #262323;
+    padding: 20px 0;
+  }
+  
+  /* ===========================
+     ROW: contenitore interno centrato
+  =========================== */
+  .row {
+    display: flex;
     width: 100%;
     max-width: 1000px;
-    
     justify-content: center;
-
-}
-
-.row.grey
-{    background-color: #b0afaf;
-    padding: 20px;
-    
+    margin: 0 auto;  /* Assicura la centratura all'interno del wrapper */
+  }
   
-}
-
-.main-body.green
-{ background-color: #19a01f;
-    height: 700px;
-    border: #000000;
-    border-style: dashed;
+  /* ===========================
+     BOX GENERICI
+  =========================== */
+  .main-body.blue {
+    background-color: #5a48f7;
+    color: #ffffff;
+    height: 200px;
+    border: #000000 dashed;
+    flex-grow: 1.5;
+  }
+  
+  .main-body.pink {
+    background-color: #ff80fb;
     flex-grow: 1;
-}
-
-.row.black
-{ background-color: #262323;
+  }
+  
+  .main-body.blue.B { flex-grow: 1; }
+  .main-body.pink.B { flex-grow: 1.5; }
+  .main-body.blue.C { flex-grow: 1.5; }
+  .main-body.pink.C { flex-grow: 1; }
+  
+  .main-body.green {
+    background-color: #19a01f;
+    height: 700px;
+    border: #000000 dashed;
+    flex-grow: 1;
+  }
+  
+  /* ===========================
+     RIGHE AGGIUNTIVE (row.grey già definite nei wrapper)
+  =========================== */
+  
+  /* ===========================
+     RIGHE BLACK
+  =========================== */
+  .row.black {
     padding: 20px;
     
-    
-}
-
-.main-body.orange
-{ background-color: #f7a05a;
+  }
+  
+  .row.black.little {
+    padding: 20px;
+    border-top: 2px solid #fff
+  }
+  
+  /* ===========================
+     ALTRE STILIZZAZIONI
+  =========================== */
+  .main-body.orange {
+    background-color: #f7a05a;
     flex-grow: 1.5;
-
-}
-
-.main-body.light.green
-{ background-color: #a1f7a0;
+  }
+  
+  .main-body.light.green {
+    background-color: #a1f7a0;
     flex-grow: 1;
-
-}
-
-.row.black.little {
-background-color: #262323;
-padding: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.main-body.light.blue
-{ background-color: #a0a1f7;
+  }
+  
+  .main-body.light.blue {
+    background-color: #a0a1f7;
     height: 100px;
-}
-
-.main-body.button
-{ background-color: #f7a0a0;
+    display: flex;
+    justify-content: space-between; /* bottoni agli estremi orizzontali */
+    align-items: center;
+  }
+  
+  .main-body.button {
+    background-color: #f7a0a0;
     padding: 5px 10px;
     border: 2px dashed #000;
-    
-} 
-
-.main-body.spacer {
+  }
+  
+  .main-body.spacer {
     flex-grow: 1;
     background-color: transparent;
-
-} 
+  }
+  
+  .black-rows-container {
+    /* Contenitore a colonna */
+    display: flex;
+    flex-direction: column;
+    gap: 0;       /* niente spazio tra le due righe nere */
+    width: 100%;  /* si estende come il parent */
+  }

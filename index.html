@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>struttura pagina discord</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>struttura pagina discord</title>
 </head>
 <body>
-    <div>
-<header>
-   <div class="head-box">
-    <h4>logo</h4>
-   </div>
-   <div class="head-box central">
-    <h4>link link link link</h4>
-   </div>
-   <div class="head-box">
-    login
-   </div>
+  <div>
+    <header>
+      <div class="head-box">
+        <h4>logo</h4>
+      </div>
+      <div class="head-box central">
+        <h4>link link link link</h4>
+      </div>
+      <div class="head-box">
+        login
+      </div>
+    </header>
+  </div>
+  <div class="main-head">
+    <div class="main-head little"></div>
+  </div>
 
-</header>
-
+  <main>
+    <!-- RIGA 1 (due box): rimane invariata -->
+    <div class="row">
+      <div class="main-body blue"></div>
+      <div class="main-body pink"></div>
     </div>
-    <div class="main-head">
-        <div class="main-head little"></div>
-    </div>
 
-    <main>
-<div class="row">
-        <div class="main-body blue"></div>
-        <div class="main-body pink"></div>
-    </div>
-
-    <div class="row grey">
-
-        
-        
+    <!-- RIGA 2 (row grey): avvolta per fullwidth -->
+    <div class="grey fullwidth">
+      <div class="row grey">
         <div class="main-body blue B"></div>
         <div class="main-body pink B"></div>
-        </div>
+      </div>
+    </div>
 
-        <div class="row">
-        
-            <div class="main-body blue C"></div>
-            <div class="main-body pink C"></div>
-            </div>
+    <!-- RIGA 3 (due box): rimane invariata -->
+    <div class="row">
+      <div class="main-body blue C"></div>
+      <div class="main-body pink C"></div>
+    </div>
 
-            
-            <div class="row grey">
-        
-                <div class="main-body green "></div>
-                </div>
+    <!-- RIGA 4 (row grey con un box verde): avvolta per fullwidth -->
+    <div class="grey fullwidth">
+      <div class="row grey">
+        <div class="main-body green"></div>
+      </div>
+    </div>
 
-                <div class="row black">
-        
-                    <div class="main-body orange "></div>
-                    <div class="main-body light green "></div>
-                    <div class="main-body light green "></div>
-                    <div class="main-body light green "></div>
-                    <div class="main-body light green "></div>
-                    </div> 
+    <!-- RIGA 5 (row black con 5 box): avvolta per fullwidth -->
+    <div class="black-rows-container">
+    <div class="black fullwidth">
+      <div class="row black">
+        <div class="main-body orange"></div>
+        <div class="main-body light green"></div>
+        <div class="main-body light green"></div>
+        <div class="main-body light green"></div>
+        <div class="main-body light green"></div>
+      </div>
+    </div>
 
-                    <div class="row black little">
-        
-                        <div class="main-body light blue "></div>
-                        <div class="main-body button "><h4>logo</h4></div>
-                        
-                        <div class="main-body button "> <h4>bottone</h4></div>
-                        
-                        </div> 
-       
-    </main>
+
+    <!-- RIGA 6 (row black little con 3 box): avvolta per fullwidth -->
+     
+    <div class="black fullwidth">
+      <div class="row black little">
+        <div class="main-body light blue">
+        <div class="main-body button"><h4>logo</h4></div>
+        <div class="main-body button"><h4>bottone</h4></div>
+      </div>
+    </div>
+    </div>
+</div>
+  </main>
 </body>
 </html>
