@@ -57,6 +57,8 @@ main
     color: #000000;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 40px;
     align-items: center;
    margin-top: 50px;
    margin-bottom: 50px;
@@ -65,20 +67,65 @@ main
     
 }
 
-.main-body
+.main-body.blue
 { background-color: #5a48f7;
     color: #ffffff;
-    height: 300px;
+    
+    height: 200px;
     border: #000000;
     border-style: dashed;
     flex-grow: 1.5;
-
+   
 
 }
 
-.main-body.right
+.main-body.pink
 { background-color: #ff80fb;
 
     flex-grow: 1;
     
+}
+
+.main-body.blue.B
+{ flex-grow: 1;
+
+}
+
+.main-body.pink.B
+{ flex-grow: 1.5;
+
+}
+
+.main-body.blue.C
+{ flex-grow: 1.5;
+
+}
+
+.main-body.pink.C
+{ flex-grow: 1;
+
+}
+
+
+.row
+{ display: flex;
+    width: 100%;
+    max-width: 1000px;
+    
+    justify-content: center;
+
+}
+
+.row.grey
+{    background-color: #b0afaf;
+    padding: 20px;
+  
+}
+
+.main-body.green
+{ background-color: #19a01f;
+    height: 700px;
+    border: #000000;
+    border-style: dashed;
+    flex-grow: 1.5;
 }
